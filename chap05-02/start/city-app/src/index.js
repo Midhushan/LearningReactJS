@@ -9,6 +9,7 @@ const DistrictList = [
     {id: 2, name: "Jaffna", head:"JF"},
     {id: 3, name: "Mannar", head:"MN"},
     {id: 4, name: "Vuaniya", head:"VN"},
+    {id: 5, name: "Mullaitheevu", head:"MV"},
     ];
 
 ReactDOM.render(
