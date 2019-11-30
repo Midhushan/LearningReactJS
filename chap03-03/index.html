@@ -17,14 +17,15 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-         const Cities = ({name}) => <h1>{name}</h1>;
+         const Districts = ({name}) => <h1>{name}</h1>;
          const App = () => (
              <div className="Heading">
-             <Cities name="Jaffna" />
-             <Cities name="Mannar" />
-             <Cities name="Kilinochchi" />
-             <Cities name="Vauniya" />
+             <Districts name="Kilinochchi" />
+             <Districts name="Jaffna" />
+             <Districts name="Mannar" />
+             <Districts name="Vauniya" />
              </div>
+
          );
          ReactDOM.render(
              <App />,
