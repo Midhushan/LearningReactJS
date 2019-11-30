@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--  React Render Components -->
+
+<head>
+    <title>Learn Reactjs</title>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        .Heading{
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body> 
+    <div id="root"></div>
+    <script type="text/babel">
+         const Districts = ({name}) => <h1>{name}</h1>;
+         const Province = ({name}) => <h1>{name}</h1>;
+         
+         const App = ({urban}) => (
+             <div>
+             {urban 
+                ? <Districts  name="Jaffna"/> 
+                : <Province name="Northern Province"/>}
+             </div>
+         )
+         ReactDOM.render(
+             <App urban={false}/>,
+             
+             document.getElementById("root")
+         );
+    </script>
+</body>
+
+</html>
