@@ -11,7 +11,10 @@
     <div id="root"></div>
     <script type="text/javascript">
         ReactDOM.render(
-            React.createElement("h1", null, "Hello React!"),
+            React.createElement(
+                "h1", 
+                {"style":{"color":"red"}},
+                "Hello React!"),
             document.getElementById("root")
         )
     </script>
