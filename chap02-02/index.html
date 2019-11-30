@@ -13,8 +13,13 @@
         ReactDOM.render(
             React.createElement(
                 "h1", 
-                {"style":{"color":"red"}},
-                "Hello React!"),
+                null,
+                React.createElement(
+                    "h1",
+                    null,
+                    "Nested Element!"
+                )
+                ), 
             document.getElementById("root")
         )
     </script>
